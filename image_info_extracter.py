@@ -5,7 +5,7 @@ import json
 from openai import OpenAI
 
 # --- OpenRouter API credentials ---
-OPENROUTER_API_KEY = ""
+OPENROUTER_API_KEY = st.secrets["OPENROUTER_API_KEY"]
 
 def get_image_info_from_openrouter(data_url):
     """
